@@ -4,12 +4,12 @@ const dogRouter = express.Router();
 const dogQueue = require('./dogs');
 
 dogRouter.route('/').get((req, res, next) => {
-  if(!dogQueue.first){
+  if (!dogQueue.first) {
     return [];
   }
   let curr = dogQueue.first;
   let dogs = [];
-  while(curr.next !== null){
+  while (curr !== null) {
     dogs.push(curr.value);
     curr = curr.next;
   }

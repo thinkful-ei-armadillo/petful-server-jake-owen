@@ -4,12 +4,12 @@ const catRouter = express.Router();
 const catQueue = require('./cats');
 
 catRouter.route('/').get((req, res, next) => {
-  if(!catQueue.first){
+  if (!catQueue.first) {
     return [];
   }
   let curr = catQueue.first;
   let cats = [];
-  while(curr.next !== null){
+  while (curr !== null) {
     cats.push(curr.value);
     curr = curr.next;
   }
