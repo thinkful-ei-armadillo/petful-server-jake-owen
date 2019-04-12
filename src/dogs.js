@@ -1,3 +1,7 @@
+const Queue = require('./Queue');
+
+const dogQueue = new Queue();
+
 const dogs = [
   {
     imageURL:
@@ -8,7 +12,8 @@ const dogs = [
     sex: 'Male',
     age: 3,
     breed: 'Golden Retriever',
-    story: 'Owner Passed away'
+    story: 'Owner Passed away',
+    adopter: null
   },
   {
     imageURL:
@@ -19,7 +24,8 @@ const dogs = [
     sex: 'Female',
     age: 2,
     breed: 'Golden Retriever',
-    story: 'Owner Passed away'
+    story: 'Owner Passed away',
+    adopter: null
   },
   {
     imageURL:
@@ -30,7 +36,8 @@ const dogs = [
     sex: 'Male',
     age: 1,
     breed: 'Golden Retriever',
-    story: 'Owner moved away'
+    story: 'Owner moved away',
+    adopter: null
   },
   {
     imageURL:
@@ -41,7 +48,17 @@ const dogs = [
     sex: 'Female',
     age: 4,
     breed: 'Auburn Retriever',
-    story: 'Owner moved away'
+    story: 'Owner moved away',
+    adopter: null
   }
 ];
-module.exports = dogs;
+
+function QueueDogs(dogs) {
+  dogs.forEach(dog => {
+    dogQueue.enqueue(dog);
+  });
+}
+
+QueueDogs(dogs);
+
+module.exports = dogQueue;

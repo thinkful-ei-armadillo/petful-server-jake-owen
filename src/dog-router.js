@@ -1,10 +1,10 @@
 const express = require('express');
 
 const dogRouter = express.Router();
-const dogs = require('./dogs');
+const dogQueue = require('./dogs');
 
 dogRouter.route('/').get((req, res, next) => {
-  res.json(dogs);
+  res.json(dogQueue);
 });
 
 module.exports = dogRouter;

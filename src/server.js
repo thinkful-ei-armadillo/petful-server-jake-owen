@@ -2,12 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const DogRouter = require('./dog-router');
 const CatRouter = require('./cat-router');
+const userRouter = require('./user-router');
 
 const app = express();
 app.use(cors());
 
 app.use('/api/cat', CatRouter);
 app.use('/api/dog', DogRouter);
+app.use('/api/user', userRouter);
 
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);

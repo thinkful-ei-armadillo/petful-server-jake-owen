@@ -1,3 +1,7 @@
+const Queue = require('./Queue');
+
+const catQueue = new Queue();
+
 const cats = [
   {
     imageURL:
@@ -8,7 +12,8 @@ const cats = [
     sex: 'Female',
     age: 2,
     breed: 'Bengal',
-    story: 'Thrown on the street'
+    story: 'Thrown on the street',
+    adopter: null
   },
   {
     imageURL:
@@ -19,7 +24,8 @@ const cats = [
     sex: 'Male',
     age: 3,
     breed: 'Balinese',
-    story: 'Thrown on a different street'
+    story: 'Thrown on a different street',
+    adopter: null
   },
   {
     imageURL:
@@ -30,7 +36,8 @@ const cats = [
     sex: 'Female',
     age: 3,
     breed: 'Bengal',
-    story: 'Thrown on the street'
+    story: 'Thrown on the street',
+    adopter: null
   },
   {
     imageURL:
@@ -41,8 +48,18 @@ const cats = [
     sex: 'Female',
     age: 2,
     breed: 'Bengal',
-    story: 'Thrown on the street'
+    story: 'Thrown on the street',
+    adopter: null
   }
 ];
 
-module.exports = cats;
+function QueueCats(cats) {
+  cats.forEach(cat => {
+    catQueue.enqueue(cat);
+  });
+  return catQueue;
+}
+
+QueueCats(cats);
+
+module.exports = catQueue;
