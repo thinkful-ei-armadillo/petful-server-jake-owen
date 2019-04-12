@@ -5,12 +5,16 @@ const dogQueue = require('./dogs');
 
 
 dogRouter.route('/').get((req, res, next) => {
-  if(!dogQueue.first){
+  if (!dogQueue.first) {
     return [];
   }
   let curr = dogQueue.first;
   let dogs = [];
+<<<<<<< HEAD
   while(curr !== null){
+=======
+  while (curr !== null) {
+>>>>>>> refs/remotes/origin/master
     dogs.push(curr.value);
     curr = curr.next;
   }
