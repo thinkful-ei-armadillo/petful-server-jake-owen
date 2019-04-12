@@ -9,7 +9,7 @@ userRouter.route('/').get((req, res, next) => {
   }
   let curr = userQueue.first;
   let users = [];
-  while(curr.next !== null){
+  while(curr !== null){
     users.push(curr.value);
     curr = curr.next;
   }
