@@ -10,11 +10,7 @@ dogRouter.route('/').get((req, res, next) => {
   }
   let curr = dogQueue.first;
   let dogs = [];
-<<<<<<< HEAD
-  while(curr !== null){
-=======
   while (curr !== null) {
->>>>>>> refs/remotes/origin/master
     dogs.push(curr.value);
     curr = curr.next;
   }

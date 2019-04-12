@@ -25,7 +25,7 @@ const dogs = [
     age: 2,
     breed: 'Golden Retriever',
     story: 'Owner Passed away',
-    adopter: null
+    adopter: 'Bort'
   },
   {
     imageURL:
@@ -37,7 +37,7 @@ const dogs = [
     age: 1,
     breed: 'Golden Retriever',
     story: 'Owner moved away',
-    adopter: null
+    adopter: 'John'
   },
   {
     imageURL:

@@ -9,11 +9,7 @@ userRouter.route('/').get((req, res, next) => {
   }
   let curr = userQueue.first;
   let users = [];
-<<<<<<< HEAD
-  while(curr !== null){
-=======
   while (curr !== null) {
->>>>>>> refs/remotes/origin/master
     users.push(curr.value);
     curr = curr.next;
   }

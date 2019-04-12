@@ -37,7 +37,7 @@ const cats = [
     age: 3,
     breed: 'Bengal',
     story: 'Thrown on the street',
-    adopter: null
+    adopter: 'Gina'
   },
   {
     imageURL:
@@ -49,7 +49,7 @@ const cats = [
     age: 2,
     breed: 'Bengal',
     story: 'Thrown on the street',
-    adopter: null
+    adopter: 'Johansson'
   }
 ];
 
