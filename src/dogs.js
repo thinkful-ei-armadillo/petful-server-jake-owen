@@ -5,7 +5,7 @@ const dogQueue = new Queue();
 const dogs = [
   {
     imageURL:
-			'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+			'https://www.strawfordogs.org/wp-content/uploads/2016/11/S4D-Bo-with-toys-300x300.jpg',
     imageDescription:
 			'A smiling golden-brown golden retreiver listening to music.',
     name: 'Zeus',
@@ -17,7 +17,7 @@ const dogs = [
   },
   {
     imageURL:
-			'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+			'https://www.allseasonsccc.com/wp-content/uploads/dog-14-300x300.jpg',
     imageDescription:
 			'A smiling golden-brown golden retreiver listening to music.',
     name: 'Hera',
@@ -29,7 +29,7 @@ const dogs = [
   },
   {
     imageURL:
-			'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+			'https://myshilohvet.com/wp-content/uploads/2018/03/canine-rehab_preview-300x300.jpeg',
     imageDescription:
 			'A smiling golden-brown golden retreiver listening to music.',
     name: 'Heph',
@@ -41,14 +41,14 @@ const dogs = [
   },
   {
     imageURL:
-			'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+			'https://myshilohvet.com/wp-content/uploads/2018/03/dental_preview-300x300.jpeg',
     imageDescription:
 			'A smiling golden-brown golden retreiver listening to music.',
     name: 'Hades',
     sex: 'Female',
     age: 4,
     breed: 'Auburn Retriever',
-    story: 'Owner moved away',
+    story: 'Mike Vic... Need I say more?',
     adopter: null
   }
 ];
