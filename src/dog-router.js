@@ -5,6 +5,7 @@ const dogQueue = require('./dogs');
 
 
 dogRouter.route('/').get((req, res, next) => {
+  
   if (!dogQueue.first) {
     return [];
   }
@@ -14,11 +15,13 @@ dogRouter.route('/').get((req, res, next) => {
     dogs.push(curr.value);
     curr = curr.next;
   }
+
   res.json(dogs);
 });
 
 dogRouter.route('/').delete((req, res, next) => {
   dogQueue.dequeue();
+  dogQueue.enqueue(dogQueue.dequeue());
   res.status(204).end();
 });
 

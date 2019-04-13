@@ -25,7 +25,7 @@ const dogs = [
     age: 2,
     breed: 'Golden Retriever',
     story: 'Owner Passed away',
-    adopter: 'Bort'
+    adopter: null
   },
   {
     imageURL:
@@ -37,14 +37,62 @@ const dogs = [
     age: 1,
     breed: 'Golden Retriever',
     story: 'Owner moved away',
-    adopter: 'John'
+    adopter: null
   },
   {
     imageURL:
-			'https://myshilohvet.com/wp-content/uploads/2018/03/dental_preview-300x300.jpeg',
+			'http://www.mutkut.com/wp-content/uploads/2015/12/boston-300x300.jpg',
     imageDescription:
 			'A smiling golden-brown golden retreiver listening to music.',
     name: 'Hades',
+    sex: 'Female',
+    age: 4,
+    breed: 'Auburn Retriever',
+    story: 'Mike Vic... Need I say more?',
+    adopter: null
+  },
+  {
+    imageURL:
+			'http://www.mutkut.com/wp-content/uploads/2015/12/spaniel-cocker-300x300.jpg',
+    imageDescription:
+			'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Butch',
+    sex: 'Male',
+    age: 3,
+    breed: 'Golden Retriever',
+    story: 'Owner Passed away',
+    adopter: null
+  },
+  {
+    imageURL:
+			'https://www.allseasonsccc.com/wp-content/uploads/dog-14-300x300.jpg',
+    imageDescription:
+			'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Randy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Golden Retriever',
+    story: 'Owner Passed away',
+    adopter: null
+  },
+  {
+    imageURL:
+			'http://www.mutkut.com/wp-content/uploads/2015/12/setter-300x300.jpg',
+    imageDescription:
+			'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Zoomer',
+    sex: 'Male',
+    age: 1,
+    breed: 'Golden Retriever',
+    story: 'Owner moved away',
+    adopter: null
+  },
+  {
+    imageURL:
+			'http://www.mutkut.com/wp-content/uploads/2015/12/Shichon-Dog-300x300.jpg',
+    imageDescription:
+			'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Tyler',
     sex: 'Female',
     age: 4,
     breed: 'Auburn Retriever',
