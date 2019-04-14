@@ -3,7 +3,8 @@ const cors = require('cors');
 const DogRouter = require('./dog-router');
 const CatRouter = require('./cat-router');
 const userRouter = require('./user-router');
-const CLIENT_ORIGIN = require('./config');
+const {CLIENT_ORIGIN, PORT} = require('./config');
+
 
 const app = express();
 app.use(cors({ origin: CLIENT_ORIGIN }));
@@ -29,6 +30,6 @@ app.use(function(req, res, next) {
 // Catch-all Error handler
 // Add NODE_ENV check to prevent stacktrace leak
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log('Serving on 8080');
 });
