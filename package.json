@@ -7,14 +7,22 @@
 	"license": "UNLICENSED",
 	"main": "src/server.js",
 	"scripts": {
+<<<<<<< HEAD
 		"test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js",
     "deploy": "git push heroku master"
+=======
+		"test": "mocha --require test/setup.js",
+		"start": "nodemon src/server.js"
+>>>>>>> b638eb024c4ad5345c1276194b09cfb0d605f245
 	},
 	"dependencies": {
+		"chai": "^4.2.0",
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
 		"faker": "^4.1.0",
-		"nodemon": "^1.18.10"
+		"mocha": "^6.1.3",
+		"nodemon": "^1.18.10",
+		"supertest": "^4.0.2"
 	}
 }
