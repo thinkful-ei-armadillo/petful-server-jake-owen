@@ -8,7 +8,7 @@
 	"main": "src/server.js",
 	"scripts": {
 		"test": "mocha --require test/setup.js",
-		"start": "nodemon src/server.js"
+		"start": "src/server.js"
   },
   
 	"dependencies": {
