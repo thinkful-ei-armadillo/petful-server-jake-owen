@@ -6,7 +6,7 @@
 
 ### Client:
 
-- deployed link
+- https://jo-petful-837r5p1ub.now.sh
 
 - https://github.com/thinkful-ei-armadillo/petful-client-jake-owen
 
